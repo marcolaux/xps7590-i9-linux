@@ -26,6 +26,8 @@ Just install the newest NVIDIA drivers, set it to **on-demand** in the NVIDIA se
 options nvidia NVreg_DynamicPowerManagement=0x02
 ```
 
+Install mate-optimus (https://github.com/ubuntu-mate/mate-optimus) or use the newest GNOME Shell (right click application / use NVIDIA or something) to use the NVIDIA GPU.
+
 ### TLP
 
 I cut the max CPU frequency when on battery with TLP to conserve power.
