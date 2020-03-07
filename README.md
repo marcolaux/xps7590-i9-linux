@@ -18,7 +18,7 @@ undervolt --core -125 --cache -125 --gpu -125
 
 ### NVIDIA On-Demand
 
-Just install the newest NVIDIA drivers and create the following file to conserve power and get down up to ~6 W when idle:
+Just install the newest NVIDIA drivers, set it to **on-demand** in the NVIDIA settings and create the following file to conserve power and get down up to ~6 W when idle:
 
 /etc/modprobe.d/nvidia.conf
 
