@@ -19,13 +19,15 @@ mem_sleep_default=deep
 
 1. Install the newest NVIDIA drivers (435.17+)
 2. on Ubuntu based systems open NVIDIA settings and set the PRIME profile to **on-demand**
-3. Install **mate-optimus** (https://github.com/ubuntu-mate/mate-optimus) **OR** use **GNOME Shell 3.36+** (right click application / use NVIDIA or something) to use the NVIDIA GPU.
+3. Install **mate-optimus** (https://github.com/ubuntu-mate/mate-optimus) **OR** use **GNOME Shell 3.36+** to use the NVIDIA GPU.
+    - with mate-optimus use the commands **offload-glx** or **offload-vulkan** to run an application with the NVIDIA GPU enabled
+    - with GNOME Shell right click an application icon in the shell and click something like **run with NVIDIA** - this should be in GNOME Shell 3.36+ and should work with the propriatary drivers
 
 With the modprobe parameter in nvidia.conf power-management is great and the NVIDIA GPU turns off when not in use.
 
 ### TLP
 
-I cut the max CPU frequency when on battery with TLP to conserve power.
+I cut the max CPU frequency and disabled turbo boost when on battery with TLP to conserve power.
 Have a look at the example config in this GIT.
 
 ### Fan control

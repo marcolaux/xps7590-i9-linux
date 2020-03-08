@@ -88,8 +88,8 @@ CPU_HWP_ON_BAT=balance_power
 # - This may conflict with your distribution's governor settings
 # - A value of 1 does *not* activate boosting, it just allows it
 # Default: <none>
-#CPU_BOOST_ON_AC=1
-#CPU_BOOST_ON_BAT=0
+CPU_BOOST_ON_AC=1
+CPU_BOOST_ON_BAT=0
 
 # Minimize number of used CPU cores/hyper-threads under light load conditions:
 #   0=disable, 1=enable.
