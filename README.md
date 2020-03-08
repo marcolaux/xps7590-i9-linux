@@ -1,5 +1,5 @@
 # XPS 7590-i9-linux
-Optimize Linux things on the XPS 7950 with the i9 and the NVIDIA GTX 1650
+Optimize Linux things on the XPS 7590 with the i9 and the NVIDIA GTX 1650
 
 ### Pre-requirements
 
