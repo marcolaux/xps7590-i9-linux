@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "disable DELL BIOS fan control"
+/usr/sbin/dell-bios-fan-control 0
+
+echo "restart i8kmon"
+systemctl restart i8kmon.service

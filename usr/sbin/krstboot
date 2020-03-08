@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "disable DELL BIOS fan control"
+/usr/sbin/dell-bios-fan-control 0
+#echo LID > /proc/acpi/wakeup

@@ -1,0 +1,11 @@
+[Unit]
+Description=KRSTBOOT: apply krst setttings . . .
+Before=graphical.target
+
+[Service]
+User=root
+Type=simple
+ExecStart=/usr/sbin/krstboot
+
+[Install]
+WantedBy=multi-user.target

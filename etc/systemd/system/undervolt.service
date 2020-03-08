@@ -1,0 +1,9 @@
+[Unit]
+Description=undervolt
+
+[Service]
+Type=oneshot
+# If you have installed undervolt globally (via sudo pip install):
+ExecStart=/usr/local/bin/undervolt --core -125 --cache -125 --gpu -125
+# If you want to run from source:
+# ExecStart=/path/to/undervolt.py -v --core -150 --cache -150 --gpu -100
