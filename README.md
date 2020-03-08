@@ -14,6 +14,7 @@ mem_sleep_default=deep
 ```
 
 2. Update GRUB
+3. reboot
 
 ### NVIDIA On-Demand
 
