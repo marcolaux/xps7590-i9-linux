@@ -5,10 +5,10 @@ Optimize Linux things on the XPS 7590 with the i9 and the NVIDIA GTX 1650
 
 - Copy everything in this GIT to it’s place on root.
 
-- make the scripts executable
+- make the dell-bios-fan-control command executable
 
     ```
-    sudo chmod +x /usr/sbin/dell-bios-fan-control /usr/sbin/krst*
+    sudo chmod +x /usr/sbin/dell-bios-fan-control
     ```
 
 ### Enable S3 (deep sleep)
@@ -37,17 +37,20 @@ With the modprobe parameter in nvidia.conf power-management is great and the NVI
 I cut the max CPU frequency and disabled turbo boost when on battery with TLP to conserve power.
 Have a look at the example config in this GIT.
 
-### Fan control
+### Fan control (to be tuned in the future)
 
 ```
 apt install i8kutils
-systemctl enable --now krstboot
-systemctl enable krstresume
+systemctl enable --now dell-bios-fan-control
+systemctl enable --now i8kmon
 ```
 
 DELL BIOS based fan control (thanks to @TomFreudenberg: https://github.com/TomFreudenberg/dell-bios-fan-control) will be disabled and custom fan control will take over. The configs in /etc/i8kmon.conf prevent the fans to start while doing basic tasks and watching videos (until 60°C).
 
-### Undervolt (careful)
+EDIT: It’s not fine grained, yet as I only get no fans and pretty much maxed fans. I’ll update the fan configs when I find more usable values. Until now I would not mind this fan control step.
+BIOS fan control is pretty much alright but they kick in a little too early for my taste.
+
+### Undervolt (careful, to be tuned in the future)
 
 Personally I haven’t find the right settings for me right now. Adjust the undervolting values in /etc/systemd/system/undervolt.service.
 
