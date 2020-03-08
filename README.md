@@ -38,7 +38,7 @@ systemctl enable --now krstboot
 systemctl enable krstresume
 ```
 
-DELL BIOS based fan control will be disabled and custom fan control will take over. The configs in /etc/i8kmon.conf prevent the fans to start while doing basic tasks and watching videos (until 60°C).
+DELL BIOS based fan control (thanks to @TomFreudenberg: https://github.com/TomFreudenberg/dell-bios-fan-control) will be disabled and custom fan control will take over. The configs in /etc/i8kmon.conf prevent the fans to start while doing basic tasks and watching videos (until 60°C).
 
 ### Undervolt (careful)
 
