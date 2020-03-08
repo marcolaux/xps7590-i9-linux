@@ -5,6 +5,12 @@ Optimize Linux things on the XPS 7590 with the i9 and the NVIDIA GTX 1650
 
 - Copy everything in this GIT to it’s place on root.
 
+- make the scripts executable
+
+    ```
+    sudo chmod +x /usr/sbin/dell-bios-fan-control /usr/sbin/krst*
+    ```
+
 ### Enable S3 (deep sleep)
 
 1. add this to **GRUB_CMDLINE_LINUX_DEFAULT** in **/etc/default/grub**
